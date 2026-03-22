@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasu Portfolio</title>
+    <style>
+        body
+        {
+           font-family: Arial, Helvetica, sans-serif;
+           margin:0;
+           padding:0;
+        }
+        .header
+        {
+            background-color: #333;
+            color:white;
+            text-align: center;
+            padding:20px;
+            box-shadow: 0 2px 5px gray;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+        .header img{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            margin-top:15px;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;   /* center items */
+            gap: 20px; 
+            list-style-type: none;
+            padding:0;
+        }
+        nav ul li{
+            display: inline;
+            margin:10px;
+        }
+        nav ul li a{
+            color:white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: yellow;
+        }
+        div
+        {
+            padding: 40px 20px;
+        }
+        .about
+        {
+            text-align:center;
+            background-color: #f4f4f4;
+        }
+        .skills{
+            background-color: #e2e2e2;
+        }
+        .skills h2{
+            text-align: center;
+        }
+        .skills ul{
+            display:flex;
+            justify-content: center;
+            gap:20px;
+            list-style:none;
+            padding:0;
+        }
+        .skills li{
+            background-color: white;
+            padding:10px 20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px gray;
+        }
+        .projects{
+            background-color: #f4f4f4;
+        }
+        .projects h2{
+            text-align: center;
+        }
+        .projects ul{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            gap:20px;
+            list-style:none;
+            padding:0;
+        }
+        .projects li{
+            background-color:white;
+            padding:15px;
+            width:200px;
+            text-align:center;
+            border-radius:10px;
+            box-shadow:0 2px 5px gray;
+        }
+        .projects li:hover{
+            transform:scale(1.05);
+            transition:0.3s;
+        }
+
+        .contact
+        {
+            background-color: #e2e2e2;
+        }
+        .contact h2{
+            text-align: center;
+        }
+        .footer
+        {
+            background-color: #333;
+            color:white;
+            text-align:center;
+            padding:10px;
+        }
+        img
+        {
+            height:200px;
+            width:200px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+        /*RESPONSIVE*/
+        @media (max-width:600px)
+        {
+            .header h1
+            {
+                font-size:24px;
+            }
+            .projects li{
+                width:90%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>My Portfolio</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h2>Welcome to my portfolio</h2>
+        <p>
+            This is the beginning of my journey in front-end development,
+            leading me towards my career path.
+        </p>
+
+        <img src="vasu beauty.jpg" alt="Vasu Image">
+    </div>
+
+    <!-- About Section -->
+    <div class="about">
+        <h2>About Me</h2>
+        <p>
+            I am an aspiring front-end developer who never gives up when I fail.
+            I am dedicated, hardworking, and a quick learner.
+
+            I am V S Vasundhra, currently pursuing my BCA degree at
+            FACEPrep Campus, Kamaraj College.
+
+            I completed my schooling at Mother Theresa Matric Higher Secondary School,
+            scoring 80% in 10th and 85% in 12th with a Computer Science background.
+
+            I have participated in symposiums, earned certifications from LinkedIn,
+            Microsoft, TCS iON, and Google AI.
+
+            I am also part of the Smart India Hackathon team and have participated
+            in various competitions, winning prizes and gaining experience as a team leader.
+        </p>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>HTML & CSS (Learning)</li>
+            <li>Python</li>
+            <li>Photoshop</li>
+        </ul>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Gadget Zone</li>
+            <li>Portfolio Website</li>
+            <li>Grid System</li>
+            <li>Event Page</li>
+            <li>Perfumy Website</li>
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <b>vasuvs3101@gmail.com</b></p>
+        <p>Phone: <b>+91 9994138737</b></p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2026 Vasu. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
